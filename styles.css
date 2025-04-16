@@ -1,0 +1,141 @@
+*{
+ /* border: 2px,solid,red; */
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline:none;
+  font-family: Quicksand,sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 238, 6)
+}
+
+.form-wrapper{
+    width: 70rem;
+    height: 30rem;
+    background-color: rgb(165, 190, 213);
+    border-radius: 8px;
+    box-shadow: 2px 2px 40px 2px;
+    position : relative;
+    overflow: hidden;
+}
+.banner{
+    position: absolute;
+    z-index:100;
+    top: 25%;
+    left: 50px;
+    left: -350px;
+    text-align: center;
+    color: white;
+    transition: left 0.8s;
+}
+.container.change .banner{
+    left: 50px;
+}
+.banner h1{
+    margin: 20px 0px;
+    font-weight: 700;
+}
+.green-bg{
+    /* width:40%; */
+    width:100%;
+    height:100%;
+   background: linear-gradient(to right, green, black );
+   border: 2px solid green;
+   position: absolute;
+   top:0;
+   left: 0;
+   z-index: 50;
+   transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.green-bg button{
+    position:absolute;
+    top: 60%;
+    left: 30%;
+    color:white;
+   border: 1px, solid, white;
+   background-color: transparent;
+   width: 100px;
+   height: 30px;
+   border-radius: 48px;
+   text-transform: uppercase;
+   z-index: 1;
+}
+.container.change .green-bg{
+    width:40%;
+}
+
+.signupform{
+    width: 20rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* left: 500px; */
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .signupform{
+    left: 500px;
+}
+.signupform h1{
+    color: white;
+    font-weight: bold;
+}
+.socialMedia{
+ display: flex;
+ width: 170px;
+    justify-content: space-between;
+   gap: 6px;
+ 
+}
+
+.socialMedia i{
+    width: 45px;
+    height: 45px;
+    background-color: bisque;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+       justify-content: center;
+    
+}
+.inputgroup input{
+    width:200px;
+    height:40px;
+    background-color: transparent;
+    padding: 1px 1px 1px 45px;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+.inputgroup{
+    position: relative
+}
+
+.inputgroup i{
+    position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.signupbutton button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+}
